@@ -1,6 +1,9 @@
-const APP_PREFIX = 'budget-tracker-';
+const APP_PREFIX = 'BudgetTracker-';
+
 const VERSION = 'version_01';
+
 const CACHE_NAME = APP_PREFIX + VERSION;
+
 const FILES_TO_CACHE = [
     "/",
     "./index.html",
@@ -15,6 +18,7 @@ self.addEventListener('install', function (e) {
         caches.open(CACHE_NAME).then(function (cache) {
             
             console.log('installing cache : ' + CACHE_NAME)
+
             return cache.addAll(FILES_TO_CACHE)
         })
     );
@@ -31,6 +35,7 @@ self.addEventListener('activate', function (e) {
             return Promise.all(
                 keyList.map(function (key, i) {
                     if (cacheKeeplist.indexOf(key) === -1) {
+                        
                         console.log('deleting cache : ' + keyList[i]);
                     }
                 })    
