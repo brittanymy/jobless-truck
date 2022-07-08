@@ -46,5 +46,5 @@
     "theme_color": "#fffff",
     "background_color": "#fcba03",
     "start_url": "./index.html",
-    "display": ""
+    "display": "minimal-ui"
 }
