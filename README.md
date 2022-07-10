@@ -20,3 +20,4 @@ THEN the deposits or expenses added while they were offline are added to their t
 
 https://afternoon-savannah-14876.herokuapp.com/
 
+<img width="1093" alt="Screen Shot 2022-07-10 at 7 34 38 PM" src="https://user-images.githubusercontent.com/97000955/178166293-c01fd4a8-c9d5-4b6b-b0e8-48b3a70cf8a9.png">
